@@ -25,4 +25,5 @@ print(count_vowels(str = list('i love python')))
 #### Hint: use map() with a lambda funciton
 '''
 int_list = [40,35, 10, 15, 20] 
-print(map(lambda x: x*x, int_list))
+print(list(map(lambda x: x*x, int_list)))
+
