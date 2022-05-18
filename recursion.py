@@ -8,17 +8,16 @@ def isVowel(character):
   else:
       return 0
 
-def countVowels(string, n): 
-	
-  if n == 1 :
-      return isVowel(string[0]) 
-  else:
-
-    return countVowels(string, n - 1) + isVowel(string[n - 1]) 
+def countVowels(string):
+	count = 0
+	for i in range(len(string)): 
+		if isVowel(string[i]) :  
+			count += 1
+	return count 
 
  
 string = "I love python"
-print(countVowels(string, len(string))) 
+print(countVowels(string)) 
 
 
 
