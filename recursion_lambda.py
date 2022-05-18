@@ -4,19 +4,19 @@
 # return how many vowels(a,e,i,o,u)
 #  are in that phrase or word:
 '''
-def count_vowels(count = 0, str = []):
+def count_vowels(string: str= ' ', count = 0):
+    ar = list(string)
     vowels = ['a','e','i','o','u']
-    if not str:
+    if not ar:
         return count
 
-    count = count
-    if str.pop().lower() in vowels:
+    if ar.pop().lower() in vowels:
         count += 1
 
-    return count_vowels(count, str)
+    return count_vowels(''.join(ar), count)
 
 string = 'i love python'
-print(count_vowels(str = list(string)))
+print(count_vowels(string))
     
 '''
  2) Given a list of numbers : [40,35, 10, 15, 20] 
