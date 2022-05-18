@@ -1,25 +1,22 @@
+
+from calendar import c
+
+
 def isVowel(character): 
-  character = character.lower() 
+   characters = character.lower() 
 
-  vowels = "aeiou" 
+   vowels = "aeiou" 
+   if characters =="":
+       return 0
+   if characters[0] in vowels : 
+     return 1+isVowel(characters[1:])
+    
+   else:
+       return 0 +isVowel(characters[1:])
+   
 
-  if character in vowels : 
-    return 1
-  else:
-      return 0
-
-def countVowels(string):
-	count = 0
-	for i in range(len(string)): 
-		if isVowel(string[i]) :  
-			count += 1
-	return count 
-
- 
-string = "I love python"
-print(countVowels(string)) 
-
-
+print(isVowel("I love python")) 
+#second code
 
 newlst=[40,35, 10, 15, 20]
 
