@@ -22,7 +22,7 @@ def countVowels(str):
             count += 1
         elif isVowel2(str[i]):
             count += 1
-
+    print("total vowels number is: ")
     return count
 
 str = input("write :")
