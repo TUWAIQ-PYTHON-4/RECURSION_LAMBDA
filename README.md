@@ -11,4 +11,4 @@
 
 #### create a new list containing each number from the previous list mutliplied by itself.
 #### print the new list.
-#### Hint: use map() 
+#### Hint: use map() with a lambda funciton
