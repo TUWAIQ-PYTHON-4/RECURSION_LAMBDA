@@ -1,6 +1,3 @@
-from unittest import result
-
-
 def isVowel(character): 
   character = character.lower() 
 
