@@ -15,7 +15,8 @@ def count_vowels(count = 0, str = []):
 
     return count_vowels(count, str)
 
-print(count_vowels(str = list('i love python')))
+string = 'i love python'
+print(count_vowels(str = list(string)))
     
 '''
  2) Given a list of numbers : [40,35, 10, 15, 20] 
