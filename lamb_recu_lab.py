@@ -8,3 +8,7 @@ def VowelCount(s):
     return VowelCount(v[1:])
 
 print(VowelCount('I Love Python'))
+
+list_1 = [40,35, 10, 15, 20]
+cubed = map(lambda x: x*x ,list_1)
+print(list(cubed))
